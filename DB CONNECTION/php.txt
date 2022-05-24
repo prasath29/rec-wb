@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>EMPLOYEE</title>
+    </head>
+    <body>
+        <?php
+        $name = filter_input(INPUT_GET,'Ename');
+        $id = filter_input(INPUT_GET,'id');
+        $a = new mysqli('localhost','root','','students');
+        if($a->connect_error)
+        {            die('Connection Error'.$a->connect_error);
+        
+        }
+        else{
+            $stmt = $a->prepare("insert into student (name,rollno) VALUES(?,?)");
+            $stmt->bind_param("si",$name,$id);
+            $stmt->execute();
+            echo 'SUCCESSFULLY ENTERED INTO THE TABLE STUDENT';   
+        }
+        ?>
+    </body>
+</html>

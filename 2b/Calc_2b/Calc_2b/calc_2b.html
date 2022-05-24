@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Calculator</title>
+        <style>
+            body{
+                background-color: white;
+                color : black;
+            }
+            #Calc{
+                margin-left: auto;
+                margin-right: auto;
+                border : 3px solid black;
+            }      
+
+            .but{
+                width: 4em;
+                height: 4em;
+            }
+            #expr
+            {
+                border: 5px solid black;
+            }
+        </style>
+
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body>
+        <h1 style="text-align: center;color: crimson;">Calculator</h1>
+        <table id = "Calc">
+            <tr>
+                <td colspan="4">
+                    <input type="text" id ="expr" name="expr" style="width: 17em";/>
+                </td>
+            </tr>
+
+            <tr>
+                <td><button onclick ="numpress(9)" class = "but" value="9" name="9" id="9">9</button></td>
+                <td><button onclick ="numpress(8)" class = "but" value="8" name="8" id="8">8</button></td>
+                <td><button onclick ="numpress(7)" class = "but" value="7" name="7" id="7">7</button></td>
+                <td><button onclick ="numpress('+')" class = "but" name="+" id="+" value="+">+</button></td>
+            </tr>
+
+            <tr>
+                <td><button onclick ="numpress(6)" class = "but" value="6" name="6" id="6">6</button></td>
+                <td><button onclick ="numpress(5)" class = "but" value="5" name="5" id="5">5</button></td>
+                <td><button onclick ="numpress(4)" class = "but" value="4" name="4" id="4">4</button></td>
+                <td><button onclick ="numpress('*')" class = "but" name="*" id="*" value="*" >*</button></td>
+            </tr>
+
+
+            <tr>
+                <td><button onclick ="numpress(3)" class = "but" value="3" name="3" id="3">3</button></td>
+                <td><button onclick ="numpress(2)" class = "but" value="2" name="2" id="2">2</button></td>
+                <td><button onclick ="numpress(1)" class = "but" value="1" name="1" id="1">1</button></td>
+                <td><button onclick ="numpress('-')" class = "but" name=" - " id=" - " value=" - ">-</button></td>
+            </tr>
+
+            <tr>
+                <td><button class = "but" onclick="clearscreen()" value="">AC</td>
+                <td><button onclick = "numpress(0)" class = "but" value="0" name="0" id="0">0</button></td>
+                <td><button class = "but" name="equals" id="equals" onclick="calculate()">=</button></td>
+                <td><button onclick ="numpress('/')" class = "but" name=" / " id=" / " value = " / " >/</button></td>
+            </tr>
+        </table>
+    </body>
+</html>

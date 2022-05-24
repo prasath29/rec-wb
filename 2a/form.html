@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <style> 
+    body{
+      background-color: greenyellow; 
+    }
+    .cont{
+      max-width:500px;
+      margin:auto;
+    }
+  </style>
+    <head>
+        <title>Form validation</title>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div class="cont">
+        <form method="post"action="hp.html"onsubmit="return validate()">
+        <h1 style="color: blue;">FORM validation</h1>
+      	NAME:<input type="text" name="nsme" placeholder="name" autofocus><br><br>
+        EMAIL:<input type="text" name="email" placeholder="mail-id"><br><br>
+        RETYPE EMAIL:<input type="text" name="retype_email" placeholder="re-email"><br><br>
+        PHONE:<input type="text" name="phone" id="myPhone" maxlength="10" placeholder="phone"><br><br>
+        PASSWORD:<input type="password" name="password" placeholder="password"><br><br>
+        RETYPE PASSWORD:<input type="password" name="retype_password" placeholder="re-password"><br><br>
+        <input type="submit" class="button" value="SUBMIT">
+      </div>  
+	</form>
+</body>
+</html>

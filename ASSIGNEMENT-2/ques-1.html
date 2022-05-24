@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Palindrome</title>
+</head>
+<body>
+  <script>
+    function palindrome(n) {
+        var rem,n,r=0,temp;
+        temp = n;
+      while(n>0) {
+        rem = n%10;
+        n = parseInt(n/10);
+        r = r*10+rem;
+      }
+      if(r==temp){
+          return "It is a palindrome";
+      }
+      else {
+          return "It is not a palindrome";
+      }
+    }
+    var n = prompt("Enter the number:");
+      document.write(palindrome(n));
+  </script>
+</body>
+</html>

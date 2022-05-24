@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").toggle("slow");
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color:whitesmoke;
+  border: solid 1px #c3c3c3;
+  text-decoration-color: white;
+}
+
+#panel {
+  padding: 50px;
+  display: none;  
+}
+.about{
+    text-align: center;
+}
+p{   text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    font-size:2em;
+    font-style:normal;
+    font-weight:normal;
+    position: absolute;
+    vertical-align: middle;
+}
+</style>
+</head>
+<body>
+ 
+<div id="flip">SUNIL</div>
+<div id="panel">
+    <img src="sunil.jpeg" width="320" height="450"/>
+</div>
+<div class="about">
+ <p>Hii I am Sunil from Villupuram. I love gaming and I want to become a ML enmgineer.I love friends and they are toxic in nature.
+   Because they are good and something bad and so they are toxic.
+
+</div>
+</body>
+</html>

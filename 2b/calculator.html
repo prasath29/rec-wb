@@ -1,0 +1,33 @@
+<html>
+    <style>
+        body{
+            background-color:rgb(143, 153, 153);
+            }
+    </style>
+<head>
+<script>
+function add()
+   {
+      var numOne, numTwo;
+      numOne = parseInt(document.getElementById("n1").value);
+      numTwo = parseInt(document.getElementById("n2").value);
+      document.getElementById("answer").value = numOne + numTwo;
+      document.getElementById("answer1").value =numOne - numTwo ;
+      document.getElementById("answer2").value = numOne * numTwo;
+      document.getElementById("answer3").value = numOne / numTwo;
+      document.getElementById("answer4").value = numOne % numTwo;
+   }
+</script>
+</head>
+<body>
+    <h1>SIMPLE CALCULATOR PROGRAM</h1>    
+    <p>Enter the First Number: <input type="text" id="n1" placeholder="Number1" autofocus></p>
+    <p>Enter the Second Number: <input type="text" id="n2" placeholder="Number2"></p>
+    <button onclick="add()">Submit</button>
+    <p>Sum = <input id="answer"></p>
+    <p>Sub = <input id="answer1"></p>
+    <p>Mul = <input id="answer2"></p>
+    <p>Div = <input id="answer3"></p>
+    <p>Modulo = <input id="answer4"></p>
+</body>
+</html>

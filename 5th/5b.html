@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#zoom").click(function(){
+    var para = $("p");
+    para.animate({fontSize: '7em'}, "slow");
+    para.animate({fontSize: '2em'}, "slow");
+  });
+  $("#tinkle").click(function(){
+    $("div").animate({
+      height: 'toggle'
+    });
+  });
+});
+</script>
+</head>
+<body>
+<center>
+<h1>ANIMATION USING JQUERY</h1>
+<h1>LIFE IS FULL OF SURPRISES AND MIRACLES</h1>
+<button id="zoom">click</button><br><br>
+<button id="tinkle">Animate it</button><br><br>
+<div style="background:rgb(10, 163, 235);height:100px;width:1000px;position:static;"></div>
+</center>
+</body>
+</html>
